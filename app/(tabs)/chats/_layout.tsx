@@ -24,7 +24,13 @@ const Layout = () => {
           ),
         }}
       />
-       <Stack.Screen
+      <Stack.Screen
+        name="[id]"
+        options={{
+          headerShown: false, // Disable the default header
+        }}
+      />
+       {/* <Stack.Screen
         name="[id]"
         options={{
           header: () => (
@@ -37,7 +43,7 @@ const Layout = () => {
             />
           ),
         }}
-      />
+      /> */}
       {/* <Stack.Screen name="[id]" options={{
         title:'',
         headerBackTitleVisible: false,

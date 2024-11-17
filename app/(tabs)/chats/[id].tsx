@@ -8,17 +8,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Swipeable } from 'react-native-gesture-handler';
 import ChatMessageBox from '@/components/ChatMessageBox';
 import ReplyMessageBar from '@/components/ReplyMessageBar';
-
-interface Message {
-  id: string;
-  text: string;
-  createdAt: Date;
-  user: {
-    _id: number;
-    name: string;
-  };
-}
-
+import ProfileHeader from '@/components/profileHeader';
 
 const Page = () => {
   const [message, setMessage] = useState<IMessage[]>([]);
@@ -26,6 +16,7 @@ const Page = () => {
   const [text, setText] = useState('');
   const swipeableRowRef = useRef<Swipeable | null>(null);
   const [replyMessage, setReplyMessage] = useState<IMessage  | null>();
+  
 
   useEffect(() => {
     setMessage([
@@ -81,6 +72,14 @@ const Page = () => {
 
 
   return (
+    <>
+    <ProfileHeader
+      name="Simardeep Kaur"
+      icons={[
+        { name: 'videocam' },
+        { name: 'call' },
+      ]}
+    />
     <ImageBackground source ={require('@/assets/images/pattern.png')} style={{ flex:1, marginBottom: 4 }}>
       <GiftedChat
         messages={message}
@@ -145,6 +144,7 @@ const Page = () => {
         )}        
       />
     </ImageBackground>
+    </>
   )
 }
 

@@ -19,7 +19,7 @@ interface ChatItemProps {
     message: string;
   }
 
-  const Chats: React.FC<ChatItemProps> = ({ id, name, date, unseenCount, backgroundColor, img, message }) => {
+  const Chats: React.FC<ChatItemProps> = ({ id, name, date, unseenCount, img, message }) => {
   return (
     <GestureHandlerRootView>
       <ChatSwipeableRow>
@@ -31,30 +31,30 @@ interface ChatItemProps {
           }}
           style={{ flex: 1, width: '100%' }}
         >
-                <View style={styles.containerItems}>
-                    <View style={styles.itemContainer}>
-                        <View style={styles.iconname}>
-                        <Image source={{ uri: img }} style={styles.profileImage} />
-                        <View style={styles.namecontainer}>
-                        <Text 
-                            style={styles.username}>{name}</Text>
-                            <View style={styles.timeContainer}>
-                            <Text style={styles.description}>
-                            {message.split(' ').length > 10
-                                ? message.split(' ').slice(0, 10).join(' ') + '...'
-                                : message}
-                            </Text>
-                            </View>
-                        </View>
-                        </View>
-                        <View style={styles.timeEllipse}>
-                          <Text style={styles.description}>{format(date, 'MM.dd.yy')}</Text>
-                          {unseenCount !== undefined && parseInt(unseenCount) > 0 && (
-                              <Text style={styles.unseenCount}>{unseenCount}</Text>
-                          )}
-                        </View>
-                    </View>
-                </View>
+          <View style={styles.containerItems}>
+              <View style={styles.itemContainer}>
+                  <View style={styles.iconname}>
+                  <Image source={{ uri: img }} style={styles.profileImage} />
+                  <View style={styles.namecontainer}>
+                  <Text 
+                      style={styles.username}>{name}</Text>
+                      <View style={styles.timeContainer}>
+                      <Text style={styles.description}>
+                      {message.split(' ').length > 10
+                          ? message.split(' ').slice(0, 10).join(' ') + '...'
+                          : message}
+                      </Text>
+                      </View>
+                  </View>
+                  </View>
+                  <View style={styles.timeEllipse}>
+                    <Text style={styles.description}>{format(date, 'MM.dd.yy')}</Text>
+                    {unseenCount !== undefined && parseInt(unseenCount) > 0 && (
+                        <Text style={styles.unseenCount}>{unseenCount}</Text>
+                    )}
+                  </View>
+              </View>
+          </View>
         </Link>
         </TouchableOpacity>
       </ChatSwipeableRow>

@@ -22,7 +22,7 @@ const ProfileHeader: React.FC<CustomHeaderProps> = ({ name, icons = [] }) => {
     const router = useRouter();
 
     const handleBackPress = () => {
-        router.back(); // This will take the user to the previous page
+        router.back();
       };
 
 
