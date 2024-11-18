@@ -1,4 +1,4 @@
-import { FlatList,  FlatListComponent, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { FlatList, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Colors from '@/constants/Colors';
 import { useAuth } from '@clerk/clerk-expo';

@@ -109,6 +109,7 @@ const InitialLayout = () => {
           </Link>
         )
        }} />
+        <Stack.Screen name="profile" options={{ headerShown: false }} />
     </Stack>
 );;
 }

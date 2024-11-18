@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { ImageBackground, StyleSheet, View } from 'react-native'
 import React, { useState, useCallback, useEffect, useRef } from 'react'
 import { Bubble, GiftedChat, IMessage, InputToolbar, Send, SystemMessage,  } from 'react-native-gifted-chat'
 import messageData from '@/assets/data/messages.json'
@@ -9,8 +9,13 @@ import { Swipeable } from 'react-native-gesture-handler';
 import ChatMessageBox from '@/components/ChatMessageBox';
 import ReplyMessageBar from '@/components/ReplyMessageBar';
 import ProfileHeader from '@/components/profileHeader';
+import { useLocalSearchParams } from 'expo-router';
 
 const Page = () => {
+  const { id, name, date, unseenCount, img } = useLocalSearchParams();
+  const displayId = Array.isArray(id) ? id[0] : id;
+  const displayName = name as string || "Unknown";
+  const displayImg = img as string | undefined;
   const [message, setMessage] = useState<IMessage[]>([]);
   const insets = useSafeAreaInsets();
   const [text, setText] = useState('');
@@ -74,7 +79,9 @@ const Page = () => {
   return (
     <>
     <ProfileHeader
-      name="Simardeep Kaur"
+      id={displayId}
+      name={displayName}
+      img={displayImg} 
       icons={[
         { name: 'videocam' },
         { name: 'call' },

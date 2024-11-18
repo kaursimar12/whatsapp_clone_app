@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableHighlight, View,  Image, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View,  Image, TouchableOpacity } from 'react-native'
 import React, { FC } from 'react'
 import { Link } from 'expo-router'
 import Colors from '@/constants/Colors'
@@ -28,6 +28,7 @@ interface ChatItemProps {
           href={{
             pathname: '/(tabs)/chats/[id]',
             params: { id: id, name: name, img: img },
+
           }}
           style={{ flex: 1, width: '100%' }}
         >

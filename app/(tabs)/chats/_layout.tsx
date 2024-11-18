@@ -30,36 +30,6 @@ const Layout = () => {
           headerShown: false, // Disable the default header
         }}
       />
-       {/* <Stack.Screen
-        name="[id]"
-        options={{
-          header: () => (
-            <ProfileHeader
-              name="Simardeep Kaur"
-              icons={[
-                { name: 'videocam' },
-                { name: 'call' },
-              ]}
-            />
-          ),
-        }}
-      /> */}
-      {/* <Stack.Screen name="[id]" options={{
-        title:'',
-        headerBackTitleVisible: false,
-        headerStyle: {
-          height: 80, // Adjust the height of the header
-          backgroundColor: 'transparent', // Make background transparent if you want
-          elevation: 0, // Remove shadow on Android
-          borderBottomWidth: 0, // Remove bottom border
-        },
-        headerTitle: () =>(
-          <View style={{ flexDirection: 'row', gap: 10}}>
-            <Image source = {{ uri : 'https://i.pravatar.cc/150?u=aguilarduke@marketoid.com'}} style={{width:40 , height: 40 , borderRadius: 50}}/>
-            <Text style={{ fontSize: 16, fontWeight: '500'}}>Simardeep Kaur</Text>
-          </View>
-        )
-       }}/> */}
     </Stack>
   );
 };

@@ -20,7 +20,7 @@ type CustomHeaderProps = {
 };
 
 
-const ProfileHeader: React.FC<CustomHeaderProps> = ({ id, name, img, icons = [] }) => {
+const ContactHeader: React.FC<CustomHeaderProps> = ({ id, name, img, icons = [] }) => {
     const router = useRouter();
 
     const handleBackPress = () => {
@@ -42,24 +42,14 @@ const ProfileHeader: React.FC<CustomHeaderProps> = ({ id, name, img, icons = [] 
   return (
     <TouchableOpacity onPress={handlePress} style={styles.headerContainer}>
       <View style={{ flexDirection: 'row', alignItems: 'center', width:'100%', justifyContent:'space-between' }}>
-          <View style={{ flexDirection: 'row', alignItems:'center'}}>
-              <TouchableOpacity onPress={handleBackPress} style={{ marginRight: 10 }}>
-                  <Ionicons name="chevron-back" size={30} color={Colors.gray} />
-              </TouchableOpacity>
-              <View style={{ flexDirection: 'row', gap: 10}}>
-                  <Image source = {{ uri: img || './assets/images/default.jpg' }} style={{width:40 , height: 40 , borderRadius: 50}}/>
-                  <View style={styles.profileContainer}>
-                      <Text style={{ fontSize: 16, fontWeight: '800'}}>{name}</Text>
-                      <Text style={{ fontSize: 12, color:Colors.gray}}>tap here for more info</Text>
-                  </View>
-              </View>
-          </View>
-          <View style={styles.iconContainer}>
-              {icons.map((icon, index) => (
-                  <TouchableOpacity key={index} onPress={icon.onPress} style={{ marginHorizontal: 8}}>
-                  <Ionicons name={icon.name} color={Colors.green} size={30} />
-                  </TouchableOpacity>
-              ))}
+        <TouchableOpacity onPress={handleBackPress} style={{ marginRight: 10 }}>
+            <Ionicons name="chevron-back" size={30} color={Colors.gray} />
+        </TouchableOpacity>
+        <View>
+            <Text style={styles.headerTitle}>Contact Info</Text>
+        </View>
+          <View>
+            <Text style={styles.LeftHeaderTitle}>Edit</Text>
           </View>
       </View>
     </TouchableOpacity>
@@ -76,15 +66,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   headerTitle: {
-    color: '#006400',
+    color: 'black',
     fontWeight: 'bold',
-    fontSize: 24,
+    fontSize: 20,
   },
-  iconContainer: {
-    flexDirection: 'row',
-  },
-  profileContainer:{
+  LeftHeaderTitle:{
+    color:Colors.green,
+    fontWeight: '800',
+    fontSize: 18,
+    paddingRight:10
   }
 });
 
-export default ProfileHeader;
+export default ContactHeader;
