@@ -8,11 +8,28 @@ This is a WhatsApp-inspired mobile application built with React Native, featurin
 - **Chat Screen**: Displays a list of conversations, including sample messages, timestamps, and chat bubbles.
 
 ![image](https://github.com/user-attachments/assets/37ec1e23-38e9-40b5-8af5-caa984d97e93)
+![image](https://github.com/user-attachments/assets/598a97d5-d4f1-4fab-a5bc-ed6d228a207a)
+![image](https://github.com/user-attachments/assets/47ccad6e-6648-43cd-a836-300e1ee02475)
+![image](https://github.com/user-attachments/assets/48a035d6-7e20-44b6-a49a-bec8c6b12c4f)
+
+- **Status Screen**: Shows sample status updates.
+
+![image](https://github.com/user-attachments/assets/e2eff4ea-828d-477e-aac4-766f63e9d608)
 
   
-- **Status Screen**: Shows sample status updates.
 - **Calls Screen**: Lists recent calls, with details like call time and type (missed, incoming, outgoing).
+
+![image](https://github.com/user-attachments/assets/0e250b02-4474-4866-8c46-20fb67502060)
+
+![image](https://github.com/user-attachments/assets/26a3e31d-4ec3-4670-9bc3-b48f3f734b60)
+
+![image](https://github.com/user-attachments/assets/51395baf-992b-4328-ac0c-07f76343a2b6)
+
+
 - **Settings**: Profile settings screen for user information.
+
+  ![image](https://github.com/user-attachments/assets/a983c600-3860-4217-ab73-05156b829ddc)
+
 
 > **Note**: This version uses sample data and does not support real-time messaging. A backend integration is required for full functionality.
 
