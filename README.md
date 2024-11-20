@@ -6,6 +6,7 @@ This is a WhatsApp-inspired mobile application built with React Native, featurin
 
 - **Authentication with OTP**: Users can log in with their phone number and an OTP sent via Clerk.
 - **Chat Screen**: Displays a list of conversations, including sample messages, timestamps, and chat bubbles.
+      - Swipeable functionality: On the chat screen, swiping a conversation reveals options for "More" and "Archive".
 
 ![image](https://github.com/user-attachments/assets/37ec1e23-38e9-40b5-8af5-caa984d97e93)
 ![image](https://github.com/user-attachments/assets/598a97d5-d4f1-4fab-a5bc-ed6d228a207a)
