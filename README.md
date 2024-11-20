@@ -19,6 +19,7 @@ This is a WhatsApp-inspired mobile application built with React Native, featurin
 
   
 - **Calls Screen**: Lists recent calls, with details like call time and type (missed, incoming, outgoing).
+  - **Swipeable functionality**: On the call screen, swiping a call entry reveals options for **"Delete"** and **"Message"**.
 
 ![image](https://github.com/user-attachments/assets/0e250b02-4474-4866-8c46-20fb67502060)
 
