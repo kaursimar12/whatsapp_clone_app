@@ -2,6 +2,11 @@
 
 This is a WhatsApp-inspired mobile application built with React Native, featuring a familiar user interface and essential functionalities. The app allows users to simulate a WhatsApp experience, including chatting, statuses, calls, settings and more. Authentication is enabled through Clerk, where users receive an OTP upon login. The app currently uses dummy data to simulate interactions, as it doesn’t connect to a backend server.
 
+## Authentication with Clerk
+
+- **Phone Number Validation via OTP**: Secure login using OTP sent to the user's phone number.
+- **Clerk Integration**: Ensures seamless and efficient user authentication.
+
 ## Screens
 
 ### Chats
