@@ -2,38 +2,45 @@
 
 This is a WhatsApp-inspired mobile application built with React Native, featuring a familiar user interface and essential functionalities. The app allows users to simulate a WhatsApp experience, including chatting, statuses, calls, settings and more. Authentication is enabled through Clerk, where users receive an OTP upon login. The app currently uses dummy data to simulate interactions, as it doesn’t connect to a backend server.
 
-## Features
+## Screens
 
-- **Authentication with OTP**: Users can log in with their phone number and an OTP sent via Clerk.
-- **Chat Screen**: Displays a list of conversations, including sample messages, timestamps, and chat bubbles. 
-  - **Swipeable functionality**: On the chat screen, swiping a conversation reveals options for **"More"** and **"Archive"**.
+### Chats
+- Displays a list of conversations with sample messages, timestamps, and chat bubbles.
+- Includes **swipeable functionality**: Swiping a conversation reveals options for **"More"** and **"Archive"**.
+- Dummy data integrated from a custom database.
+
+### Calls
+- Overview of recent call logs with details such as call time and type (missed, incoming, outgoing).
+- Includes **swipeable functionality**: Swiping a call entry reveals options for **"Delete"** and **"Message"**.
+
+### Status
+- Share and view statuses with smooth transitions.
+- Sample statuses included for demonstration purposes.
+
+### Settings
+- Customize preferences, account information, and profile details.
+
+### Note
+This version uses sample data and does not support real-time messaging. Backend integration is required for full functionality.
+
 
 ![image](https://github.com/user-attachments/assets/37ec1e23-38e9-40b5-8af5-caa984d97e93)
 ![image](https://github.com/user-attachments/assets/598a97d5-d4f1-4fab-a5bc-ed6d228a207a)
 ![image](https://github.com/user-attachments/assets/47ccad6e-6648-43cd-a836-300e1ee02475)
 ![image](https://github.com/user-attachments/assets/48a035d6-7e20-44b6-a49a-bec8c6b12c4f)
-
-- **Status Screen**: Shows sample status updates.
-
 ![image](https://github.com/user-attachments/assets/e2eff4ea-828d-477e-aac4-766f63e9d608)
-
-  
-- **Calls Screen**: Lists recent calls, with details like call time and type (missed, incoming, outgoing).
-  - **Swipeable functionality**: On the call screen, swiping a call entry reveals options for **"Delete"** and **"Message"**.
-
 ![image](https://github.com/user-attachments/assets/0e250b02-4474-4866-8c46-20fb67502060)
-
 ![image](https://github.com/user-attachments/assets/26a3e31d-4ec3-4670-9bc3-b48f3f734b60)
-
 ![image](https://github.com/user-attachments/assets/51395baf-992b-4328-ac0c-07f76343a2b6)
+![image](https://github.com/user-attachments/assets/a983c600-3860-4217-ab73-05156b829ddc)
 
+## Technologies Used
 
-- **Settings**: Profile settings screen for user information.
+- **React Native**: Cross-platform mobile application development.
+- **Clerk**: Authentication and user management.
+- **React Native Reanimated**: For smooth transitions and animations.
+- **Custom Database**: Dummy data integration for learning purposes.
 
-  ![image](https://github.com/user-attachments/assets/a983c600-3860-4217-ab73-05156b829ddc)
-
-
-> **Note**: This version uses sample data and does not support real-time messaging. A backend integration is required for full functionality.
 
 ## Prerequisites
 
